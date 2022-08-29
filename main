@@ -1,0 +1,17 @@
+#include <iostream>
+#include <ctime>
+int main() {
+    int down = time(0) / 500000;
+    int up = time(0) / 629545;
+    bool start;
+    std::cout << "The Internet Speed Tester ever (By Fake)\n";
+    std::cout << "type 1 to start ";
+    std::cin >> start;
+    if (start == 1) {
+    std::cout << "Your download speed is: " << down << "mbps\n";
+    std::cout << "Your upload speed is: " << up << "mbps";
+    } else {
+        std::cout << "meany";
+        return 0;
+    }
+}
